@@ -1,0 +1,13 @@
+Total number of data of old tasks:  200
+Traceback (most recent call last):
+  File "wheel_sb.py", line 305, in <module>
+    wheel.train(config['savemodel'])
+  File "wheel_sb.py", line 175, in train
+    ewc = EWC(self.model, oldtasks)
+  File "/root/fortuna/wheel/tasks/utils.py", line 24, in __init__
+    self._precision_matrices = self._diag_fisher()
+  File "/root/fortuna/wheel/tasks/utils.py", line 38, in _diag_fisher
+    input = variable(batch)
+  File "/root/fortuna/wheel/tasks/utils.py", line 13, in variable
+    return Variable(t, **kwargs)
+TypeError: Variable data has to be a tensor, but got list

@@ -1,0 +1,31 @@
+{
+    "tokenize":false,
+    "tokenizeword":false,
+    "onlyeval": true,
+    "evalmodels":[{
+        "model":"posneg_train_sb2_ewc",
+        "num":7,
+        "epoch":18
+    }],
+    "username": "wkddydpf",
+    "tasktype": "multi",
+    "type": "ewc",
+    "samplesize": 10,
+    "importance": 1000,
+    "labels": [0,1,2],
+    "testnum": 2,
+    "vocabfile": "imdb_train_p20",
+    "trainfile": ["posneg_test"],
+    "testfile": "posneg_test",
+    "files": ["cc_low_train_s0.5_aug2_sb1", "cc_high_train_s0.5_aug2_sb1"],
+    "savemodel": true,
+    "batch": 64,
+    "epoch": 50,
+    "threshold": 0.5,
+    "loadmodel": false, 
+    "pretrain": "imdb_train_p10_b0.4_sb1",
+    "modelnum": 2,
+    "modelepo": 30,
+    "projectname": "sb_posneg", 
+    "hdfs_host":"ahdm002.cmt.nfra.io:50070"
+}

@@ -1,0 +1,15 @@
+Total number of data of old tasks:  36296
+Traceback (most recent call last):
+  File "wheel_sb.py", line 301, in <module>
+    wheel.train(config['savemodel'])
+  File "wheel_sb.py", line 171, in train
+    ewc = EWC(self.model, oldtasks)
+  File "/root/fortuna/wheel/tasks/utils.py", line 24, in __init__
+    self._precision_matrices = self._diag_fisher()
+  File "/root/fortuna/wheel/tasks/utils.py", line 39, in _diag_fisher
+    output = self.model(input).view(1, -1)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/fortuna/wheel/models/cnn_rnn_pooling.py", line 29, in forward
+    x = self.embedding(x).transpose(0, 1).transpose(1, 2)
+IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 2)

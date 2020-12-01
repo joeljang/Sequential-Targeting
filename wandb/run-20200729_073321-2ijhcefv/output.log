@@ -1,0 +1,9 @@
+0/12800 [00:00<? ?it/s] wheel.py:106: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+0/12800 [00:01<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel.py", line 190, in <module>
+    wheel.train()
+  File "wheel.py", line 107, in train
+    label_lst += label.tolist()
+UnboundLocalError: local variable 'label_lst' referenced before assignment

@@ -1,0 +1,25 @@
+{
+    "root": "/root/fortuna",
+    "program": "wheel_sb.py",
+    "git": {
+        "remote": "https://oss.navercorp.com/joel-jang/fortuna.git",
+        "commit": "7d05801bec713c5e9af302075996103a9025e2fe"
+    },
+    "email": "joel.jang@navercorp.com",
+    "startedAt": "2020-08-12T15:19:27.000623",
+    "host": "99143dcc64b3",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "cpu_count": 4,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "name": "imdb_train_p10_b0.4_sb2_ewc_1",
+    "project": "seqboost_imdb",
+    "heartbeatAt": "2020-08-12T15:19:28.864042",
+    "exitcode": 1
+}

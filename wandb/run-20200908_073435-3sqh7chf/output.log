@@ -1,0 +1,17 @@
+0/640 [00:00<? ?it/s] 0/640 [00:00<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel_imm_df2.py", line 423, in <module>
+    wheel.train(config['savemodel'])
+  File "wheel_imm_df2.py", line 234, in train
+    pred = self.model(batch.syllable_contents)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/fortuna/wheel/models/cnn_rnn_pooling.py", line 29, in forward
+    x = self.embedding(x).transpose(0, 1).transpose(1, 2)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/sparse.py", line 126, in forward
+    self.norm_type, self.scale_grad_by_freq, self.sparse)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py", line 1814, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+IndexError: index out of range in self

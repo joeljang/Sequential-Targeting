@@ -1,0 +1,19 @@
+0/12800 [00:00<? ?it/s] wheel_m.py:106: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/loss.py:432: UserWarning: Using a target size (torch.Size([512])) that is different to the input size (torch.Size([512, 3])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+0/12800 [00:01<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel_m.py", line 194, in <module>
+    wheel.train()
+  File "wheel_m.py", line 109, in train
+    loss = self.loss_fn(pred, label)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/loss.py", line 432, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/functional.py", line 2542, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/functional.py", line 62, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)
+RuntimeError: The size of tensor a (3) must match the size of tensor b (512) at non-singleton dimension 1

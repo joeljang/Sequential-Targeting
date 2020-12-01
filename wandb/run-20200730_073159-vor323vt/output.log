@@ -1,0 +1,3 @@
+0/5952 [00:00<? ?it/s] wheel.py:111: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+0/5952 [00:00<? ?it/s]  0 loss: 1.1225, acc: 0.10938: 640/5952 [00:04<00:41 128.08it/s]  0 loss: 1.1225, acc: 0.10938: 640/5952 [00:05<00:41 128.08it/s]  0 loss: 0.94075, acc: 0.5:    

@@ -1,0 +1,28 @@
+{
+    "tokenize": false,
+    "tokenizeword":true,
+    "onlyeval": true,
+    "evalmodels": [{
+        "model":"imdb_train_p50_sb2_sb",
+        "num":3,
+        "epoch":17
+    }],
+    "username": "wkddydpf",
+    "tasktype": "binary",
+    "labels": [0,1],
+    "testnum": 2,
+    "vocabfile": "imdb_train_p20",
+    "trainfile": "imdb_test",
+    "testfile": "imdb_test",
+    "files": ["imdb_val", "imdb_test"],
+    "savemodel": false,
+    "batch": 64,
+    "epoch": 50,
+    "threshold": 0.5,
+    "loadmodel": false, 
+    "pretrain": "imdb_train_p10_b0.4_sb1", 
+    "modelnum": 2, 
+    "modelepo": 30, 
+    "projectname": "sb_imdb", 
+    "hdfs_host":"ahdm002.cmt.nfra.io:50070"
+}

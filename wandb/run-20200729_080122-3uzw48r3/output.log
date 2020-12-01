@@ -1,0 +1,27 @@
+0/12800 [00:00<? ?it/s] wheel_m.py:108: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+0/12800 [00:03<? ?it/s]  0 loss: 1.0801, acc: 0.66406: 0/12800 [00:20<? ?it/s]  0 loss: 1.0801, acc: 0.66406: 3584/12800 [00:20<00:52 174.73it/s]  0 loss: 1.0801, acc: 0.66406: 4096/12800 [00:23<00:49 174.93it/s]  0 loss: 1.0801, acc: 0.66406: 4608/12800 [00:26<00:47 173.32it/s]  0 loss: 1.0801, acc: 0.66406: 5120/12800 [00:29<00:44 173.35it/s]  0 loss: 1.0801, acc: 0.66406: 5120/12800 [00:32<00:44 173.35it/s]  0 loss: 0.76611, acc: 0.65874: 5632/12800 [00:32<00:41 173.27it/s]  0 loss: 0.76611, acc: 0.65874: 6144/12800 [00:35<00:37 177.18it/s]  0 loss: 0.76611, acc: 0.65874: 6656/12800 [00:38<00:34 176.59it/s]  0 loss: 0.76611, acc: 0.65874: 7168/12800 [00:40<00:31 177.26it/s]  0 loss: 0.76611, acc: 0.65874: 7680/12800 [00:43<00:28 177.93it/s]  0 loss: 0.76611, acc: 0.65874: 8192/12800 [00:46<00:26 175.03it/s]  0 loss: 0.76611, acc: 0.65874: 8704/12800 [00:49<00:23 174.80it/s]  0 loss: 0.76611, acc: 0.65874: 9216/12800 [00:52<00:20 175.06it/s]  0 loss: 0.76611, acc: 0.65874: 9728/12800 [00:55<00:17 173.84it/s]  0 loss: 0.76611, acc: 0.65874: 10240/12800 [00:58<00:14 174.75it/s]  0 loss: 0.76611, acc: 0.65874: 10240/12800 [01:01<00:14 174.75it/s]  0 loss: 0.71022, acc: 0.65653: 10752/12800 [01:01<00:11 174.99it/s]  0 loss: 0.71022, acc: 0.65653: 11264/12800 [01:04<00:08 176.49it/s]  0 loss: 0.71022, acc: 0.65653: 11776/12800 [01:07<00:05 174.77it/s]  0 loss: 0.71022, acc: 0.65653: 12288/12800 [01:10<00:02 174.66it/s]  0 loss: 0.71022, acc: 0.65653: 12800/12800 [01:11<00:00 208.52it/s]  0 loss: 0.71022, acc: 0.65653: 12800/12800 [01:11<00:00 178.91it/s]  0 loss: 0.71022, acc: 0.65653: 
+{"type": "train", "dataset": "combined12500", "epoch": 0, "loss": 0.700434388436998, "acc": 0.6575747880339146}
+| 0/1024 [00:00<?, ?it/s]wheel_m.py:147: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+| 512/1024 [00:00<00:00, 2013.41it/s]| 1024/1024 [00:01<00:00, 1052.69it/s]| 1024/1024 [00:01<00:00, 798.29it/s] 
+Traceback (most recent call last):
+  File "wheel_m.py", line 195, in <module>
+    wheel.train()
+  File "wheel_m.py", line 126, in train
+    acc_lst, total, prec,recall,f1score = self.eval(self.test_iter, len(self.task.te_dataset))
+  File "wheel_m.py", line 153, in eval
+    prec,recall,f1 = self.getscore(pred_lst,label_lst)
+  File "wheel_m.py", line 86, in getscore
+    precision, recall, f1score, blah = precision_recall_fscore_support(np.array(truth) ,np.array(pred_m), average='macro')
+  File "/usr/local/lib/python3.6/dist-packages/scikit_learn-0.23.1-py3.6-linux-x86_64.egg/sklearn/utils/validation.py", line 73, in inner_f
+    return f(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/scikit_learn-0.23.1-py3.6-linux-x86_64.egg/sklearn/metrics/_classification.py", line 1434, in precision_recall_fscore_support
+    pos_label)
+  File "/usr/local/lib/python3.6/dist-packages/scikit_learn-0.23.1-py3.6-linux-x86_64.egg/sklearn/metrics/_classification.py", line 1250, in _check_set_wise_labels
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+  File "/usr/local/lib/python3.6/dist-packages/scikit_learn-0.23.1-py3.6-linux-x86_64.egg/sklearn/metrics/_classification.py", line 81, in _check_targets
+    check_consistent_length(y_true, y_pred)
+  File "/usr/local/lib/python3.6/dist-packages/scikit_learn-0.23.1-py3.6-linux-x86_64.egg/sklearn/utils/validation.py", line 257, in check_consistent_length
+    " samples: %r" % [int(l) for l in lengths])
+ValueError: Found input variables with inconsistent numbers of samples: [999, 1998]

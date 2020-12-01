@@ -1,0 +1,19 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/user/wkddydpf/fortuna/model/2split_1_1/model_e37
+OPEN /user/wkddydpf/fortuna/model/2split_1_1/model_e37 user.name=wkddydpf c3.nn01.nhnsystem.com:50070
+Traceback (most recent call last):
+  File "wheel.py", line 285, in <module>
+    pred = wheel.load_model_and_eval(pretrainfile,1,37)
+  File "wheel.py", line 266, in load_model_and_eval
+    model_dict = pickle.load(model_pickle)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/storage.py", line 136, in _load_from_bytes
+    return torch.load(io.BytesIO(b))
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/serialization.py", line 773, in _legacy_load
+    result = unpickler.load()
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/serialization.py", line 729, in persistent_load
+    deserialized_objects[root_key] = restore_location(obj, location)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/serialization.py", line 178, in default_restore_location
+    result = fn(storage, location)
+  

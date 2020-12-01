@@ -1,0 +1,17 @@
+0/12800 [00:00<? ?it/s] 0/12800 [00:01<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel.py", line 187, in <module>
+    wheel.train()
+  File "wheel.py", line 104, in train
+    pred = self.model(batch.syllable_contents)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/root/fortuna/wheel/models/cnn_rnn_pooling_multi.py", line 42, in forward
+    x = self.softmax(x)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/activation.py", line 1044, in forward
+    return F.softmax(input, self.dim, _stacklevel=5)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/functional.py", line 1442, in softmax
+    ret = input.softmax(dim)
+IndexError: Dimension out of range (expected to be in range of [-2, 1], but got 3)

@@ -1,0 +1,1 @@
+{"_runtime": 76.97631001472473, "_timestamp": 1597244475.2311392, "Total Epoch": 3, "Batch": 64, "_step": 2, "Threshold": 0.5, "Precision": 0.0, "ROC-AUC": 0.5, "Epoch": 0, "Recall": 0.0, "Accuracy": 0.5, "Trainloss": 0.0012208220537971047, "F1Score": 0.0}

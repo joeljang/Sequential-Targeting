@@ -1,0 +1,7 @@
+0/323712 [00:00<? ?it/s] 0/323712 [00:00<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel_imm_df.py", line 410, in <module>
+    wheel.train(config['savemodel'])
+  File "wheel_imm_df.py", line 234, in train
+    pred = self.model(batch.syllable_contents, tasknum)
+NameError: name 'tasknum' is not defined

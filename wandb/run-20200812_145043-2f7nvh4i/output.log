@@ -1,0 +1,15 @@
+Total number of data of old tasks:  200
+/root/fortuna/wheel/tasks/utils.py:38: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input = variable(torch.tensor(batch[0]))
+Traceback (most recent call last):
+  File "wheel_sb.py", line 304, in <module>
+    wheel.train(config['savemodel'])
+  File "wheel_sb.py", line 174, in train
+    ewc = EWC(self.model, oldtasks)
+  File "/root/fortuna/wheel/tasks/utils.py", line 24, in __init__
+    self._precision_matrices = self._diag_fisher()
+  File "/root/fortuna/wheel/tasks/utils.py", line 40, in _diag_fisher
+    loss = F.nll_loss(output, batch[1])
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py", line 2212, in nll_loss
+    raise ValueError('Expected 2 or more dimensions (got {})'.format(dim))
+ValueError: Expected 2 or more dimensions (got 1)

@@ -1,0 +1,25 @@
+{
+    "root": "/root/fortuna",
+    "program": "wheel_imm.py",
+    "git": {
+        "remote": "https://oss.navercorp.com/joel-jang/fortuna.git",
+        "commit": "8a6332bd26ad379b5d7ef0a3eac95eaf66dd6f7e"
+    },
+    "email": "joel.jang@navercorp.com",
+    "startedAt": "2020-09-02T08:49:05.347157",
+    "host": "99143dcc64b3",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "cpu_count": 4,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "name": "posneg_val_imm_1",
+    "project": "imm",
+    "heartbeatAt": "2020-09-02T08:50:05.286973",
+    "exitcode": 0
+}

@@ -1,0 +1,27 @@
+2020-09-09 05:31:49,218 DEBUG   MainThread:27241 [wandb_config.py:_load_defaults():154] no defaults not found in config-defaults.yaml
+2020-09-09 05:31:49,485 DEBUG   MainThread:27241 [meta.py:_setup_code_git():49] probe for git information
+2020-09-09 05:31:49,496 DEBUG   MainThread:27241 [run_manager.py:__init__():547] Initialized sync for imm/2awr9g9o
+2020-09-09 05:31:49,499 INFO    MainThread:27241 [run_manager.py:wrap_existing_process():1149] wrapping existing process 26773
+2020-09-09 05:31:49,499 WARNING MainThread:27241 [io_wrap.py:register():108] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2020-09-09 05:31:49,734 INFO    MainThread:27241 [run_manager.py:init_run():928] system metrics and metadata threads started
+2020-09-09 05:31:49,734 INFO    MainThread:27241 [run_manager.py:init_run():967] upserting run before process can begin, waiting at most 10 seconds
+2020-09-09 05:31:50,029 INFO    Thread-15 :27241 [run_manager.py:_upsert_run():1056] saving pip packages
+2020-09-09 05:31:50,030 INFO    Thread-15 :27241 [run_manager.py:_upsert_run():1058] initializing streaming files api
+2020-09-09 05:31:50,030 INFO    Thread-15 :27241 [run_manager.py:_upsert_run():1065] unblocking file change observer, beginning sync with W&B servers
+2020-09-09 05:31:50,030 INFO    MainThread:27241 [run_manager.py:wrap_existing_process():1166] informing user process we are ready to proceed
+2020-09-09 05:31:50,033 INFO    MainThread:27241 [run_manager.py:_sync_etc():1298] entering loop for messages from user process
+2020-09-09 05:31:50,056 INFO    MainThread:27241 [run_manager.py:_sync_etc():1321] received message from user process: {"exitcode": 1}
+2020-09-09 05:31:50,056 INFO    MainThread:27241 [run_manager.py:_sync_etc():1408] closing log streams and sending exitcode to W&B
+2020-09-09 05:31:50,056 INFO    MainThread:27241 [run_manager.py:shutdown():1072] shutting down system stats and metadata service
+2020-09-09 05:31:50,485 INFO    Thread-4  :27241 [run_manager.py:_on_file_modified():692] file/dir modified: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/config.yaml
+2020-09-09 05:31:50,735 INFO    MainThread:27241 [run_manager.py:shutdown():1086] stopping streaming files and file change observer
+2020-09-09 05:31:50,793 INFO    MainThread:27241 [run_manager.py:_on_file_modified():692] file/dir modified: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-history.jsonl
+2020-09-09 05:31:50,797 INFO    MainThread:27241 [run_manager.py:_on_file_created():681] file/dir created: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-summary.json
+2020-09-09 05:31:50,798 INFO    MainThread:27241 [run_manager.py:_on_file_created():681] file/dir created: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-metadata.json
+2020-09-09 05:31:50,798 INFO    MainThread:27241 [run_manager.py:_on_file_created():681] file/dir created: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/requirements.txt
+2020-09-09 05:31:50,799 INFO    MainThread:27241 [run_manager.py:_on_file_created():681] file/dir created: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/output.log
+2020-09-09 05:31:50,799 INFO    MainThread:27241 [run_manager.py:_on_file_created():681] file/dir created: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-events.jsonl
+2020-09-09 05:31:50,799 INFO    MainThread:27241 [run_manager.py:_on_file_modified():692] file/dir modified: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-metadata.json
+2020-09-09 05:31:52,306 INFO    MainThread:27241 [run_manager.py:_sync_etc():1420] process only ran for 3 seconds, not syncing files
+ 05:31:50,799 INFO    MainThread:27241 [2awr9g9o:run_manager.py:_on_file_modified():692] file/dir modified: /root/fortuna/wheel/wandb/run-20200909_053148-2awr9g9o/wandb-metadata.json
+2020-09-09 05:31:52,306 INFO    MainThread:27241 [2awr9g9o:run_manager.py:_sync_etc():1420] process only ran for 3 seconds, not syncing files

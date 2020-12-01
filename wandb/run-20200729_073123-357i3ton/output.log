@@ -1,0 +1,9 @@
+0/12800 [00:00<? ?it/s] 0/12800 [00:01<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel.py", line 187, in <module>
+    wheel.train()
+  File "wheel.py", line 105, in train
+    acc = torch.sum((torch.reshape(pred, [-1]) > 0.5) == (batch.label > 0.5), dtype=torch.float32)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/tensor.py", line 28, in wrapped
+    return f(*args, **kwargs)
+RuntimeError: The size of tensor a (1536) must match the size of tensor b (512) at non-singleton dimension 0

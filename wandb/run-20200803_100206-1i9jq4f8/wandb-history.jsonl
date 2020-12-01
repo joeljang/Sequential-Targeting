@@ -1,0 +1,5 @@
+{"Total Epoch": 50, "Batch": 64, "Threshold": 0.5, "_runtime": 14.222941637039185, "_timestamp": 1596448928.3565958, "_step": 0}
+{"Epoch": 0, "Accuracy": 0.87, "Precision": 0.9, "Recall": 0.1232876712328767, "F1Score": 0.21686746987951808, "Trainloss": 0.0728799579145159, "_runtime": 384.3724293708801, "_timestamp": 1596449298.5060835, "_step": 1}
+{"Epoch": 1, "Accuracy": 0.876, "Precision": 0.8666666666666667, "Recall": 0.1780821917808219, "F1Score": 0.2954545454545454, "Trainloss": 0.05123976321435507, "_runtime": 751.5597054958344, "_timestamp": 1596449665.6933596, "_step": 2}
+{"Epoch": 2, "Accuracy": 0.888, "Precision": 0.8148148148148148, "Recall": 0.3013698630136986, "F1Score": 0.44, "Trainloss": 0.04302207476508429, "_runtime": 1119.4953548908234, "_timestamp": 1596450033.629009, "_step": 3}
+{"Epoch": 3, "Accuracy": 0.9, "Precision": 0.896551724137931, "Recall": 0.3561643835616438, "F1Score": 0.5098039215686274, "Trainloss": 0.03661382469064915, "_runtime": 1497.1507403850555, "_timestamp": 1596450411.2843945, "_step": 4}

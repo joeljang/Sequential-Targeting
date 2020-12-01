@@ -1,0 +1,25 @@
+{
+    "root": "/root/fortuna",
+    "program": "wheel.py",
+    "git": {
+        "remote": "https://oss.navercorp.com/joel-jang/fortuna.git",
+        "commit": "0860962f3fe01e4a0d589972ed84d44fc54d1f98"
+    },
+    "email": "joel.jang@navercorp.com",
+    "startedAt": "2020-07-30T06:55:16.866281",
+    "host": "99143dcc64b3",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "os": "Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "cpu_count": 4,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "name": "2split_2_50_64_5",
+    "project": "data_imbalance",
+    "heartbeatAt": "2020-07-30T06:55:18.780972",
+    "exitcode": 1
+}

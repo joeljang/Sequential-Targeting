@@ -1,0 +1,67 @@
+0/12800 [00:00<? ?it/s] wheel_m.py:107: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+torch.Size([512, 3])
+torch.Size([512])
+0/12800 [00:03<? ?it/s]  0 loss: 1.1079, acc: 0.0: torch.Size([512, 3])
+torch.Size([512])
+torch.Size([512, 3])
+torch.Size([512])
+torch.Size([512, 3])
+torch.Size([512])
+torch.Size([512, 3])
+torch.Size([512])
+torch.Size([512, 3])
+torch.Size([512])
+torch.Size([512, 3])
+torch.Size([512])
+0/12800 [00:20<? ?it/s]  0 loss: 1.1079, acc: 0.0: 3584/12800 [00:20<00:53 171.98it/s]  0 loss: 1.1079, acc: 0.0: torch.Size([512, 3])
+torch.Size([512])
+4096/12800 [00:23<00:49 176.71it/s]  0 loss: 1.1079, acc: 0.0: torch.Size([512, 3])
+torch.Size([512])
+4608/12800 [00:26<00:46 175.80it/s]  0 loss: 1.1079, acc: 0.0: torch.Size([512, 3])
+torch.Size([512])
+5120/12800 [00:29<00:43 176.08it/s]  0 loss: 1.1079, acc: 0.0: torch.Size([512, 3])
+torch.Size([512])
+5120/12800 [00:32<00:43 176.08it/s]  0 loss: 0.95148, acc: 0.59588: 5632/12800 [00:32<00:40 177.95it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+6144/12800 [00:34<00:36 179.98it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+6656/12800 [00:37<00:33 181.07it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+7168/12800 [00:40<00:31 176.90it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+7680/12800 [00:43<00:28 178.73it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+8192/12800 [00:46<00:25 178.03it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+8704/12800 [00:49<00:22 178.86it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+9216/12800 [00:52<00:20 176.38it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+9728/12800 [00:55<00:17 177.76it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+10240/12800 [00:58<00:14 175.29it/s]  0 loss: 0.95148, acc: 0.59588: torch.Size([512, 3])
+torch.Size([512])
+10240/12800 [01:01<00:14 175.29it/s]  0 loss: 0.9073, acc: 0.62667:  10752/12800 [01:01<00:11 173.00it/s]  0 loss: 0.9073, acc: 0.62667: torch.Size([512, 3])
+torch.Size([512])
+11264/12800 [01:04<00:08 172.62it/s]  0 loss: 0.9073, acc: 0.62667: torch.Size([512, 3])
+torch.Size([512])
+11776/12800 [01:07<00:05 172.07it/s]  0 loss: 0.9073, acc: 0.62667: torch.Size([512, 3])
+torch.Size([512])
+12288/12800 [01:10<00:02 173.64it/s]  0 loss: 0.9073, acc: 0.62667: torch.Size([214, 3])
+torch.Size([214])
+12800/12800 [01:11<00:00 207.23it/s]  0 loss: 0.9073, acc: 0.62667: 12800/12800 [01:11<00:00 179.15it/s]  0 loss: 0.9073, acc: 0.62667: 
+{"type": "train", "dataset": "combined12500", "epoch": 0, "loss": 0.8998859223127937, "acc": 0.6312589985602304}
+| 0/1024 [00:00<?, ?it/s]wheel_m.py:149: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+| 512/1024 [00:00<00:00, 2130.54it/s]| 1024/1024 [00:01<00:00, 1015.35it/s]| 1024/1024 [00:01<00:00, 752.50it/s] 
+Traceback (most recent call last):
+  File "wheel_m.py", line 197, in <module>
+    wheel.train()
+  File "wheel_m.py", line 128, in train
+    acc_lst, total, prec,recall,f1score = self.eval(self.test_iter, len(self.task.te_dataset))
+  File "wheel_m.py", line 155, in eval
+    prec,recall,f1 = self.getscore(pred_lst,truth_lst)
+  File "wheel_m.py", line 79, in getscore
+    if(p>threshold):
+TypeError: '>' not supported between instances of 'list' and 'float'

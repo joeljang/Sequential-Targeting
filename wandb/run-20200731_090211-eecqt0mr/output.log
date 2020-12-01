@@ -1,0 +1,17 @@
+0/12544 [00:00<? ?it/s] wheel.py:111: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  label = torch.tensor(batch.label, dtype=torch.long, device=self.device)
+0/12544 [00:00<? ?it/s] 
+Traceback (most recent call last):
+  File "wheel.py", line 199, in <module>
+    wheel.train()
+  File "wheel.py", line 114, in train
+    loss = self.loss_fn(pred, label)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/modules/loss.py", line 932, in forward
+    ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/functional.py", line 2317, in cross_entropy
+    return nll_loss(log_softmax(input, 1), target, weight, None, ignore_index, None, reduction)
+  File "/usr/local/lib/python3.6/dist-packages/torch-1.5.0-py3.6-linux-x86_64.egg/torch/nn/functional.py", line 1535, in log_softmax
+    ret = input.log_softmax(dim)
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 1)
